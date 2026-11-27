@@ -1057,7 +1057,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     audio.bluetooth_qti.default \
-    audio.primary.pineapple \
     com.dsi.ant@1.0-impl \
     gralloc.default \
     gyro_fusion_interface \
@@ -1124,7 +1123,6 @@ PRODUCT_PACKAGES += \
     libadsp_default_listener \
     libadsprpc \
     libagm \
-    libagmclient \
     libagmmixer \
     libar-acdb \
     libar-gpr \

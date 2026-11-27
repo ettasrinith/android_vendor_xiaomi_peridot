@@ -684,62 +684,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.primary.pineapple",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.primary.pineapple.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libaudioutils",
-                "libexpat",
-                "libhidlbase",
-                "libprocessgroup",
-                "libfmq",
-                "libutils",
-                "libar-pal",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libhidlmemory",
-                "libhardware_legacy",
-                "libultrasound_notify",
-                "libresampler",
-                "libar-gpr",
-                "libmispowerop",
-                "libxlog",
-                "libaudiocloudctrl",
-                "libagm",
-                "libmisight",
-                "gyro_fusion_interface",
-                "libstagefright_foundation",
-                "libmisfpsop",
-                "libmisops",
-                "vendor.qti.hardware.pal@1.0-impl",
-                "vendor.qti.hardware.pal@1.0",
-                "vendor.qti.hardware.AGMIPC@1.0-impl",
-                "vendor.qti.hardware.AGMIPC@1.0",
-                "libvoipspacespeech",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.dsi.ant@1.0-impl",
     owner: "xiaomi",
     strip: {
@@ -2779,37 +2723,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagmclient",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libagmclient.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libbase",
-                "vendor.qti.hardware.AGMIPC@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libagmmixer",
     owner: "xiaomi",
     strip: {
@@ -2936,7 +2849,6 @@ cc_prebuilt_library_shared {
                 "libaudioroute-v34",
                 "libcutils",
                 "libutilscallstack",
-                "libagmclient",
                 "libaudioroute_ext",
                 "libvui_intf",
                 "libarmemlog",
@@ -2956,6 +2868,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    check_elf_files: false,
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
@@ -5562,7 +5475,6 @@ cc_prebuilt_library_shared {
                 "libexpat",
                 "liblog",
                 "libar-pal",
-                "audio.primary.pineapple",
                 "libagm",
                 "libc++",
                 "libc",
@@ -5571,6 +5483,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    check_elf_files: false,
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
@@ -30174,7 +30087,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libtinyalsa",
                 "libagmmixer",
-                "audio.primary.pineapple",
                 "libagm",
                 "libc++",
                 "libc",
@@ -30183,6 +30095,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    check_elf_files: false,
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
@@ -31485,7 +31398,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libtinyalsa",
                 "libagmmixer",
-                "audio.primary.pineapple",
                 "libagm",
                 "libc++",
                 "libc",
@@ -31494,6 +31406,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    check_elf_files: false,
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
@@ -31838,7 +31751,6 @@ cc_prebuilt_library_shared {
                 "libtinyalsa",
                 "libagmmixer",
                 "libar-pal",
-                "audio.primary.pineapple",
                 "libagm",
                 "libc++",
                 "libc",
@@ -31847,6 +31759,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    check_elf_files: false,
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
